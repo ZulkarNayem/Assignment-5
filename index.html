@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="bg-blue-50 poppins-regular">
+    <section class="mx-16 mt-4 bg-white p-4 rounded-xl shadow-md">
+        <nav class="flex justify-between">
+            <div class="flex items-center justify-center gap-2">
+                <div>
+                    <img class="h-8" src="assets/logo.png" alt="">
+                </div>
+                <div>
+                    <p>Dev<span class="font-bold">Board</span></p>
+                </div>
+            </div>
+            <div class="flex gap-12 items-center justify-center">
+                <div class="flex gap-2 bg-blue-50 py-3 px-4 rounded-3xl">
+                    <img class="h-6" src="assets/checkbox.png" alt="">
+                    <p class="font-bold">23</p>
+                </div>
+                <div class="bg-blue-50 rounded-full">
+                    <button id="theme-btn" class="m-2">
+                        <img src="assets/theme-btn.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- body section -->
+    <section class="flex mx-16 gap-4">
+
+        <!-- left section -->
+        <section class="w-3/4 my-6 bg-white rounded-xl shadow-md">
+            <!-- top section -->
+            <div class="grid grid-cols-4 grid-rows-1 gap-4 p-4 border-b-2 border-dotted">
+
+                <div class="p-4 flex bg-blue-50 rounded-xl gap-3 items-center justify-center">
+                    <div class="bg-white rounded-full">
+                        <img class="p-4" src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <h3 class="text-xl font-bold">6</h3>
+                    </div>
+                </div>
+
+                <!-- Second and Third Row Combined -->
+                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-4 col-span-2 rounded-xl">
+                    <a href="second.html">
+                        <button class="flex justify-center items-center mx-auto">
+                            <img src="assets/board.png" alt="">
+                            <p>Discover Something new Today!</p>
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="p-4 flex bg-blue-50 rounded-xl gap-3 items-center justify-center">
+                    <div class="bg-white rounded-full">
+                        <img class="p-4" src="assets/calender.png" alt="">
+                    </div>
+                    <div class="text-xs" id="date">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- bottom card section -->
+            <div class="grid grid-cols-3 grid-rows-2 gap-4 my-4">
+                <div class="bg-blue-50 p-4 rounded-xl ml-3 shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis Lorem.</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl mr-3 shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl ml-3 shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis Lorem.</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl mr-3 shadow-md">
+                    <span class="text-sm px-3 py-1 bg-white rounded-xl text-gray-500">Shop Ease</span>
+                    <h3 class="text-base font-bold my-2 text-gray-700">Fix Mobile Button Issue</h3>
+                    <div class="bg-white p-2 text-xs rounded-lg">
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam omnis </p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                        <div>
+                            <p class="text-xs text-gray-400">Deadline</p>
+                            <p class="text-xs text-gray-600">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- right section -->
+        <section class="w-1/4 my-6 bg-white rounded-xl shadow-md">
+            <div class="flex gap-4 mt-12 items-center justify-center">
+                <img class="h-4" src="assets/activity.png" alt="">
+                <p>Activity Log</p>
+            </div>
+            <div class="mx-auto flex items-center justify-center mt-2 pb-4 border-b-2 border-dotted">
+                <button class="text-sm font-bold text-white bg-[#3752FD] p-2 rounded-md">Clear History</button>
+            </div>
+        </section>
+    </section>
+
+
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const date = now.toDateString();
+            document.getElementById('date').textContent = date;
+        }
+
+        setInterval(updateDate, 1000);
+        updateDate();
+
+        function updateDate() {
+            const now = new Date();
+            const date = now.toDateString();
+            document.getElementById('date').textContent = date;
+        }
+
+        function updateDate() {
+            const now = new Date();
+            const date = now.toDateString();
+            document.getElementById('date').textContent = date;
+        }
+
+        function getLighterRandomColor() {
+            const letters = 'CDEF'; 
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * letters.length)];
+            }
+            return color;
+        }
+
+        document.getElementById('theme-btn').addEventListener('click', function() {
+            document.body.style.backgroundColor = getLighterRandomColor();
+        });
+
+        setInterval(updateDate, 1000);
+        updateDate();
+    </script>
+
+</body>
+
+</html>
