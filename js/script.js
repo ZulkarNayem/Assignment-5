@@ -56,19 +56,19 @@ function showAlertAndDisable(buttonId, taskTitle) {
 }
 
     function updateTaskCounts() {
-        const taskAssignedElement = document.querySelector('.bg-blue-50 .text-xl');
+        const taskAssignedElement = document.querySelector('#decrease');
         let taskAssignedCount = parseInt(taskAssignedElement.textContent);
         taskAssignedCount -= 1;
         taskAssignedElement.textContent = taskAssignedCount;
 
-        // const navbarCountElement = document.querySelector('.bg-blue-50 .font-bold');
-        // let navbarCount = parseInt(navbarCountElement.textContent);
-        // navbarCount += 1;
-        // navbarCountElement.textContent = navbarCount;
+        const navbarCountElement = document.querySelector('#increase');
+        let navbarCount = parseInt(navbarCountElement.textContent);
+        navbarCount += 1;
+        navbarCountElement.textContent = navbarCount;
     }
 
     function showAlertAndDisable(buttonId, taskTitle) {
-        alert("Task Completed!");
+        alert("Board updated Successfully");
 
         const button = document.getElementById(buttonId);
         button.disabled = true;
@@ -92,7 +92,7 @@ function showAlertAndDisable(buttonId, taskTitle) {
         document.getElementById("log").appendChild(logItem);
 
         if (tasksCompleted === 6) {
-            alert("All tasks completed!");
+            alert("congratulations!! You have completed all the current task");
         }
     }
 
